@@ -54,6 +54,9 @@ public class OutputAlternatives extends AppCompatActivity implements AdapterView
         else if(selected.equals("Cream cheese/Sour Cream")) {
             tvOutput.setText("Commercial option");
         }
+        else if(selected.equals("Flour, Milk, Chocolate")) {
+            tvOutput.setText("Flour, Soymilk, Chocolate");
+        }
 
     }
 

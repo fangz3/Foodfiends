@@ -1,35 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <EditText
+        android:id="@+id/addAlergens"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
         android:hint="add allergens"
-        android:textAlignment="center"
-        android:layout_gravity="center"
-        android:layout_marginTop="200dp"
-        android:id="@+id/addAlergens"/>
+        android:textAlignment="center" />
 
     <Button
-        android:layout_marginTop="40dp"
+        android:id="@+id/ok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="OK"
-        android:id="@+id/ok"/>
+        android:layout_marginTop="40dp"
+        android:text="OK" />
+
+    <EditText
+        android:id="@+id/addAlergensFriend"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:hint="add allergens for friends"
+        android:textAlignment="center" />
 
     <Button
+        android:id="@+id/ok2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:layout_gravity="center"
-        android:text="back"
-        android:id="@+id/back"/>
+        android:layout_marginTop="40dp"
+        android:text="ok" />
 
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="back" />
 
 
 </LinearLayout>

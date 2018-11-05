@@ -3,7 +3,6 @@
     package="com.example.fangz.food_fiends">
 
     <application
-        android:name=".database"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"

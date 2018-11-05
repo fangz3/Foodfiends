@@ -10,8 +10,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class AddAlergens extends AppCompatActivity {
-    private static EditText edAddAlergens;
-    private static Button btnOk, btnBack;
+    private static EditText edAddAlergens, edAddAlergensFriends;
+    private static Button btnOk, btnBack, btnOk2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,9 @@ public class AddAlergens extends AppCompatActivity {
         setContentView(R.layout.activity_add_alergens);
 
         edAddAlergens = (EditText) findViewById(R.id.addAlergens);
+        edAddAlergensFriends = (EditText) findViewById(R.id.addAlergensFriend);
         btnOk = (Button) findViewById(R.id.ok);
+        btnOk2 = (Button) findViewById(R.id.ok2);
         btnBack = (Button) findViewById(R.id.back);
 
         btnOk.setOnClickListener(new View.OnClickListener() {
@@ -27,6 +29,16 @@ public class AddAlergens extends AppCompatActivity {
             public void onClick(View view) {
                 String alergen = edAddAlergens.getText().toString();
                 Toast toast = Toast.makeText(getApplicationContext(), alergen + " added", Toast.LENGTH_LONG);
+                toast.setGravity(Gravity.BOTTOM | Gravity.CENTER, 0, 150);
+                toast.show();
+            }
+        });
+
+        btnOk2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String alergen2 = edAddAlergensFriends.getText().toString();
+                Toast toast = Toast.makeText(getApplicationContext(), alergen2 + " added", Toast.LENGTH_LONG);
                 toast.setGravity(Gravity.BOTTOM | Gravity.CENTER, 0, 150);
                 toast.show();
             }
