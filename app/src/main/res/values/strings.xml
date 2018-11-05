@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Food-fiends</string>
+
+    <string-array name="ingredients">
+        <item> Milk </item>
+        <item> Butter </item>
+        <item> Egg </item>
+        <item> Cream </item>
+        <item> Cheese </item>
+        <item> Cream cheese/Sour Cream </item>
+    </string-array>
+
 </resources>

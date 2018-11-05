@@ -5,10 +5,29 @@
     android:orientation="vertical"
     android:gravity="center">
 
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Username"
+        android:id="@+id/username"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:id="@+id/password"/>
+
     <Button
-        android:id="@+id/btnContinue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="continue"
-        android:textAllCaps="false" />
+        android:layout_marginTop="40dp"
+        android:text="login"
+        android:id="@+id/login"/>
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sign up"/>
+
 </LinearLayout>
