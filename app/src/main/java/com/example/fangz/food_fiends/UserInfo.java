@@ -8,8 +8,8 @@ import android.widget.Button;
 
 public class UserInfo extends AppCompatActivity {
 
-    private static Button btnaddAlergens, btnsearchAlternatives, btnBack;
-
+    private static Button btnaddAlergens, btnsearchAlternatives, btncheckProfile, btnBack;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +17,7 @@ public class UserInfo extends AppCompatActivity {
 
         btnaddAlergens = (Button) findViewById(R.id.addAlergens);
         btnsearchAlternatives = (Button) findViewById(R.id.searchAlternatives);
+        btncheckProfile = (Button)findViewById(R.id.checkProfile);
         btnBack = (Button) findViewById(R.id.back);
 
         btnaddAlergens.setOnClickListener(new View.OnClickListener() {
@@ -25,6 +26,14 @@ public class UserInfo extends AppCompatActivity {
                 Intent intent = new Intent(view.getContext(), AddAlergens.class);
                 startActivity(intent);
 
+            }
+        });
+
+        btncheckProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), CheckProfile.class);
+                startActivity(intent);
             }
         });
 

@@ -3,6 +3,7 @@
     package="com.example.fangz.food_fiends">
 
     <application
+        android:name=".Global"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -19,7 +20,8 @@
         <activity android:name=".UserInfo" />
         <activity android:name=".SignUp" />
         <activity android:name=".AddAlergens" />
-        <activity android:name=".OutputAlternatives"></activity>
+        <activity android:name=".OutputAlternatives" />
+        <activity android:name=".CheckProfile"></activity>
     </application>
 
 </manifest>

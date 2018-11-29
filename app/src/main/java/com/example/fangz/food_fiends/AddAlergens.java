@@ -18,6 +18,7 @@ public class AddAlergens extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_alergens);
 
+        final Global global = (Global)getApplicationContext();
         edAddAlergens = (EditText) findViewById(R.id.addAlergens);
         edAddAlergensFriends = (EditText) findViewById(R.id.addAlergensFriend);
         btnOk = (Button) findViewById(R.id.ok);
@@ -27,8 +28,9 @@ public class AddAlergens extends AppCompatActivity {
         btnOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String alergen = edAddAlergens.getText().toString();
-                Toast toast = Toast.makeText(getApplicationContext(), alergen + " added", Toast.LENGTH_LONG);
+                String allergen = edAddAlergens.getText().toString();
+                global.allergenTable.addAllergen(allergen);
+                Toast toast = Toast.makeText(getApplicationContext(), allergen + " added", Toast.LENGTH_LONG);
                 toast.setGravity(Gravity.BOTTOM | Gravity.CENTER, 0, 150);
                 toast.show();
             }
